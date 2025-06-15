@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class shopmain {
+	public static void main(String[] args) {
+		
+		product prodobj = accept();
+		Display(prodobj);
+	
+	
+	}//end of class	
+public static product accept()
+{
+	Scanner Sc =new Scanner(System.in);
+	System.out.print("Enter Product Id");
+	int ProdId=Sc.nextInt();
+	String prodName=Sc.next();
+	int prodPrice=Sc.nextInt();
+	int prodQty=Sc.nextInt();
+	product prodobj = new product(ProdId, prodName, prodPrice, prodQty);
+	return prodobj;
+}
+public static void Display(product prodobj) 
+{
+	System.out.print("\t-----------------------------------------------------");
+	System.out.print("\t\tProduct Id \t:\t" +prodobj.getProdId());
+	System.out.print("\t\tProduct Name \t:\t" +prodobj.getProdName());
+	System.out.print("\t\tProduct Price \t:\t"+prodobj.getProdPrice());
+	System.out.print("\t\tProduct Oty \t:\t" +prodobj.getProdQty());
+	System.out.print("\t-----------------------------------------------------");
+}
+}
+
