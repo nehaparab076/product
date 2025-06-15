@@ -1,6 +1,6 @@
 public class product
 {
-	//inatance varibale
+	//instance varibale
 private int prodId;
 private String prodName;
 private double prodPrice;
